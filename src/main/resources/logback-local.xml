@@ -1,0 +1,8 @@
+<configuration Info="true" packagingData="true">
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <withJansi>true</withJansi>
+        <encoder>
+            <pattern> %d{HH:mm:ss:SSS} %-5level %logger{36} - %msg %replace(%xException){'\n','\u2028'} %nppex %n </pattern>
+        </encoder>
+    </appender>
+</configuration>
